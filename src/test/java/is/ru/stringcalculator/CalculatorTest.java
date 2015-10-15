@@ -34,5 +34,14 @@ public class CalculatorTest {
 			assertEquals(3, Calculator.add("1\n2"));
 		}
 
+	@Test
+		public void testNewLineOrDelimeter(){
+			assertEquals(6, Calculator.add("1\n2\n3"));
+		}
+
+	@Test
+		public void testNotGreaterthan1000(){
+			assertEquals(20, Calculator.add("10,10,1000"));
+		}
 
 }
