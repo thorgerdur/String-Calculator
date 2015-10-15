@@ -41,7 +41,7 @@ public class CalculatorTest {
 
 	@Test
 		public void testNotGreaterthan1000(){
-			assertEquals(20, Calculator.add("10,10,1000"));
+			assertEquals(20, Calculator.add("10,10,1001"));
 		}
 
 }
