@@ -1,12 +1,22 @@
 package is.ru.stringcalculator;
+/*import java.util.Arrays;
+import java.util.stream.Stream;*/
 
 public class Calculator {
 
 		public static int add(String text){
 
+	/*	String delimiter = ",|\n";*/
+
 		if(text.equals("")){
 			return 0;
 		}
+		/*if(text.startsWith("//"))
+		{
+			String [] number = text.split("\n",2);
+			String delimiter = number[0].substring(2);
+			text = number[1];
+		}*/
 		else if(text.contains(",")){
 			return sum(splitNumbers(text));
 		}
