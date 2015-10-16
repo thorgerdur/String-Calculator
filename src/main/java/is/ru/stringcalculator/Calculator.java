@@ -38,6 +38,11 @@ public class Calculator {
 		private static int sum(String[] numbers){
  	  int total = 0;
       for(String number : numbers){
+				
+				if(toInt(number)>1000)
+				{
+					continue;
+				}
 
 				total += toInt(number);
 		}
