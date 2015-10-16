@@ -3,11 +3,17 @@ package is.ru.stringcalculator;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import static org.junit.Assert.fail;
-import static java.lang.String.format;
-
 
 
 public class CalculatorTest {
+
+	private Calculator calculator;
+
+	@Test
+	public void init()
+	{
+		calculator = new Calculator();
+	}
 
 	public static void main(String args[]) {
       org.junit.runner.JUnitCore.main("is.ru.stringcalculator.CalculatorTest");
@@ -15,12 +21,12 @@ public class CalculatorTest {
 
 	@Test
 	public void testEmptyString(){
-		assertEquals(0, Calculator.add(""));
+		assertEquals(0, calculator.add(""));
 	}
 
 	@Test
 	public void testOneNumber(){
-		assertEquals(1, Calculator.add("1"));
+		assertEquals(1, calculator.add("1"));
 	}
 
 }
