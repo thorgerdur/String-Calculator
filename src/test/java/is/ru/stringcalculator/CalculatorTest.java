@@ -34,4 +34,10 @@ public class CalculatorTest {
 		assertEquals(3, calculator.add("1,2"));
 	}
 
+	@Test
+		public void testNewLine() throws Exception {
+			assertEquals(3, Calculator.add("1\n2"));
+		}
+
+
 }

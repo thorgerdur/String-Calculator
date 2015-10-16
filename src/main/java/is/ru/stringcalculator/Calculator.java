@@ -18,7 +18,6 @@ public class Calculator {
 			}
 			else
 				return 1;
-
 		}
 
 		private static int toInt(String number){
