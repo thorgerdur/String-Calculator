@@ -12,6 +12,11 @@ public class Calculator {
 			{
 				return toInt(text);
 			}
+			else if(text.substring(0,2).equals("//"))
+			{
+				String delimiter = ",|\n|" + text.charAt(2);
+				return sum(text.substring(4, text.length()).split(delimiter));
+			}
 			else if(text.contains(",")|| text.contains("\n"))
 			{
 				return sum(splitNumbers(text));

@@ -45,6 +45,11 @@ public class CalculatorTest {
 		}
 
 		@Test
+			public void testDifferentDilemeter(){
+				assertEquals(3, Calculator.add("//;\n1;2"));
+			}
+
+		@Test
 		public void testNotGreaterthan1000(){
 			assertEquals(20, Calculator.add("10,10,1001"));
 		}
